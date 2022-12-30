@@ -48,13 +48,15 @@ class Planets extends React.Component {
                 <button onClick={this.duplicateLastPlanet}>Duplicate Last</button>
                 <hr></hr>
 
-                {this.state.planets.map((planet) => 
+                {this.state.planets.map((planet, index) => 
                     
                     <Planet 
+                        id={planet.id}
                         name={planet.name}
                         description={planet.description}
                         img_url={planet.img_url}
                         link={planet.link}
+                        key={index}
                      />
                     
                 )}
