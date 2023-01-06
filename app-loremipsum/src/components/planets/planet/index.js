@@ -25,7 +25,8 @@ const Planet = (props) => {
         }
 
         return (
-            <div onClick={() => props.clickOnPlanet(props.name)}>
+            //<div onClick={() => props.clickOnPlanet(props.name)}>
+            <div>
                 {title}
                 <DescriptionWhitLink description={props.description} link={props.link}/>
                 <GrayImg img_url={props.img_url} gray={props.gray}/>

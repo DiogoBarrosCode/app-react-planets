@@ -33,8 +33,6 @@ const Planets = () => {
         setPlanets([...planets, new_planet])
     }
 
-
-
         return (
             <Fragment>
                 <h3>Planet List</h3>
