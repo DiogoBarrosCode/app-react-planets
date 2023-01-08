@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import DescriptionWhitLink from "../../shared/DescriptionWithLink";
 import GrayImg from "../../shared/gray_img";
+import { Link } from "react-router-dom";
 
 const Planet = (props) => {
 
@@ -18,7 +19,7 @@ const Planet = (props) => {
   return (
     //<div onClick={() => props.clickOnPlanet(props.name)}>
     <div>
-      {title}
+      <Link to={`/planet/${props.id}`}>{title}</Link>
       <DescriptionWhitLink description={props.description} link={props.link} />
       <GrayImg img_url={props.img_url} gray={props.gray} />
     </div>
